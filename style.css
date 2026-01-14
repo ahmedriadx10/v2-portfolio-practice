@@ -126,13 +126,12 @@ margin: 0 auto;
   padding: 80px 97px;
   background-color:rgba(13, 19, 33, 0.02);
   border-radius: 16px;
-  border: 1px solid red;
 }
   
 
 
 .causes_area_info{
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   text-align: center;
 }
@@ -151,6 +150,7 @@ padding: 48px;
 border-radius: 16px;
 background: linear-gradient(to right,#fff,rgb(250,250,250));
 margin-bottom: 30px;
+width: 100%;
 
 }
 
@@ -163,7 +163,7 @@ margin-bottom: 30px;
 
 .cause_info{
   max-width: 380px;
-  width: 95%;
+  width: 98%;
   color: rgba(13, 19, 33, 0.7);
 }
 .cause_area .cause_img{
@@ -185,6 +185,38 @@ margin-bottom: 30px;
   padding: 12px 20px;
 }
 
+
+/* inspiration_area */
+
+.inspiration_info{
+  max-width: 800px;
+  width: 100%;
+text-align: center;
+}
+
+.inspiration_info h4{
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--dark1);
+}
+
+/* learnt aspect ration that was awesome and its works fantastic now If i control iframe I have to use aspect ration which is responsive friendly */
+.inspiration_video_area{
+  margin-top: 50px;
+  padding: 30px;
+  border: 2px solid  rgba(13, 19, 33, 0.068);
+  border-radius: 16px;
+  aspect-ratio: 16/9;
+}
+
+.inspiration_video_area iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+
 /* responsive area */
 
 @media screen and (max-width:576px){
@@ -193,7 +225,7 @@ margin-bottom: 30px;
     width: 97%;
   }
 
-  .navigation{
+  .navigation,.cause_area,.cause_area:nth-child(3){
     flex-direction: column;
     gap: 30px;
   }
@@ -207,4 +239,23 @@ margin-bottom: 30px;
   .banner_main_container h2{
     font-size: 3rem;
   }
+
+
+  .cause_area_main{
+  padding: 40px 15px;
+  text-align: center;
 }
+
+.cause_area{
+  background: none;
+
+}
+
+.causes_area_info{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+  
+}
+
