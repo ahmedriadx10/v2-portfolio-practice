@@ -397,6 +397,11 @@ footer{
   text-align: center;
 }
 
+
+.inspiration_video_area{
+  padding: 15px;
+}
+
 .target_cards_main{
   grid-template-columns: 1fr;
 
@@ -448,3 +453,111 @@ form input{
   
 }
 
+
+@media screen and (min-width:576px) and (max-width:992px){
+.container{
+    width: 96%;
+  }
+
+.cause_area,.cause_area:nth-child(3),.footer_main{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+ 
+
+  .banner_main_container{
+    padding: 10px;
+  }
+
+  .banner_main_container h2{
+    font-size: 3rem;
+  }
+
+
+  .cause_area_main{
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.cause_area{
+  background: none;
+
+}
+
+.causes_area_info{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.inspiration_video_area{
+  padding: 25px;
+}
+
+.target_cards_main {
+
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+   
+}
+
+.next_target_main{
+  padding: 10px;
+}
+
+.next_target{
+  padding: 20px;
+}
+
+
+.support_area_main{
+  background: none;
+}
+
+.support_info h6,.support_info .p-temp{
+  color: black;
+
+
+}
+
+
+.support_info .p-temp{
+  margin-bottom: 20px;
+}
+
+form{
+  gap: 10px;
+}
+
+form input{
+  border: 1px solid black;
+  margin: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer_main{
+  align-items: center;
+  text-align: center;
+}
+
+.footer_main h6{
+  font-size: 2.5rem;
+}
+
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+  .container{
+  width: 96%;
+  }
+
+  .causes_area_info {
+margin: 0 auto 40px;
+}
+  
+}
